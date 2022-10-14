@@ -1,25 +1,19 @@
 \documentclass[letterpaper,10pt]{article}
 \usepackage{fontspec}
 \defaultfontfeatures{Ligatures=TeX}
-\setmainfont{TimesNewRoman}
+\setmainfont{TeX Gyre Termes}
 
 \usepackage{url}
 \usepackage{color}
-\usepackage{parskip}
-\setlength{\parskip}{0pt}
-\setlength{\parindent}{0pt}
-
-% set side margins to 1 inch, top and bottom to 0.5, and eliminate
-% header, footer, and margin notes
 \usepackage[hmargin=1in,vmargin=0.5in,noheadfoot,nomarginpar]{geometry}
-
-% for making custom \section
-\usepackage{titlesec}				
+\usepackage[skip=1em,indent=0pt]{parskip}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=2em}
 
 \usepackage{tabularx}
 \newcolumntype{Y}{>{\raggedleft\arraybackslash}X}
 
-% CV sections
+\usepackage{titlesec}
 \titleformat{\section}{\large\bfseries\scshape}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{10pt}{10pt}
 
@@ -29,37 +23,35 @@
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
 
 \begin{document}
-
-% non-numbered pages
 \pagestyle{empty}
 
 \begin{center}
-  \huge{\textbf{Andrew S. Abbott}}\par
+\huge{\textbf{Andrew S. Abbott}}\par
 \end{center}
 \begin{tabularx}{\textwidth}{@{}>{\hsize=.666\hsize\linewidth=\hsize}X@{}>{\hsize=1.333\hsize\linewidth=\hsize}X@{}}
-  \textsc{Current Address:} &
-         {\begin{tabularx}{\linewidth}{@{}Xr@{}}
-             \textsc{Cell}: (412) 290 2891 & \textsc{Permanent Address}:
-         \end{tabularx}}\\
-  303 Hillcrest Ave. &
-         {\begin{tabularx}{\linewidth}{@{}Xr@{}}
-             \textsc{Email}: \href{mailto:abbotta4@gmail.com}{\underline{abbotta4@gmail.com}} & 1420 Navahoe Dr.
-         \end{tabularx}}\\
-  State College, PA 16801 &
-         {\begin{tabularx}{\linewidth}{@{}Xr@{}}
-             \textsc{Source}: \href{https://github.com/Abbotta4}{\underline{https://github.com/Abbotta4}} & Pittsburgh, PA 15228
-         \end{tabularx}}\\
+\textsc{Current Address:} &
+    {\begin{tabularx}{\linewidth}{@{}Xr@{}}
+        \textsc{Cell}: (412) 290 2891 & \textsc{Permanent Address}:
+    \end{tabularx}}\\
+303 Hillcrest Ave. &
+    {\begin{tabularx}{\linewidth}{@{}Xr@{}}
+        \textsc{Email}: \href{mailto:abbotta4@gmail.com}{\underline{abbotta4@gmail.com}} & 1420 Navahoe Dr.
+    \end{tabularx}}\\
+State College, PA 16801 &
+    {\begin{tabularx}{\linewidth}{@{}Xr@{}}
+        \textsc{Source}: \href{https://github.com/Abbotta4}{\underline{https://github.com/Abbotta4}} & Pittsburgh, PA 15228
+    \end{tabularx}}\\
 \end{tabularx}
 
 \section{Education}
 \textbf{The Pennsylvania State University} -- \textit{Class of May, 2019}
-\begin{itemize}
+{\setlength{\parskip}{0pt}\begin{itemize}
 \item Bachelor of Science -- Electrical Engineering (Emphasis Computer Engineering)
 \item Bachelor of Science -- Computer Science
-\end{itemize}
+\end{itemize}}
 
 \textbf{Related Coursework}
-\begin{itemize}
+{\setlength{\parskip}{0pt}\begin{itemize}
 \item Programming -- Studied object oriented programming, functional programming, programming language concepts
 \item Data Structures and Algorithms -- Studied stacks, queues, heaps, trees, linked lists, time complexity, solvability
 \item Operating Systems -- Studied stack frames, parallelization, threading, paging, caching
@@ -68,21 +60,21 @@
 \item Electronic Circuit Design -- Studied diodes, MOSFETs, BJTs, and fundamental circuit design
 \item E.E. Theory -- Studied RF analysis, nanotechnology, continuous/discrete time linear systems analysis
 \item Design Process -- Studied the engineering design lifecycle, project management, and technical communication
-\end{itemize}
+\end{itemize}}
 
 \section{Engineering Experience}
 \textbf{Cheetah Technologies (now Alpha Technologies)} -- \textit{Engineering Intern} \hfill \textbf{Green Tree, PA}
-\begin{itemize}
+{\setlength{\parskip}{0pt}\begin{itemize}
 \item Worked on design team for a new DOCSIS 3.0 supported communications system \hfill Jun. 2017 -- Aug. 2017
 \item Reverse engineered signal processing hardware from competitor \hfill May 2014 -- Sep. 2014
 \item Implemented and tested prototype
-\end{itemize}
+\end{itemize}}
 \textbf{Behrend Amorphous Modeler} -- \textit{Software Engineer Intern} \hfill \textbf{Erie, PA}
-\begin{itemize}
+{\setlength{\parskip}{0pt}\begin{itemize}
 \item Developed C++ code for an annealing simulator \hfill Jan. 2017 -- Apr. 2017
 \item Met weekly sprint challenges to implement features
 \item Refactored existing code with updated libraries and toolchains
-\end{itemize}
+\end{itemize}}
 
 \section{Project Portfolio and Skills}
 \begin{itemize}
@@ -97,15 +89,15 @@
 
 \section{Other Work Experience}
 \textbf{Briggs \& Stratton} -- \textit{Data Entry} \hfill \textbf{Milwaukee, WI}
-\begin{itemize}
+{\setlength{\parskip}{0pt}\begin{itemize}
 \item Translated document database to a new format \hfill Feb. 2016 -- May 2016
 \item Worked exclusively in a team-oriented environment
 \item Designed and implemented a program in Pascal to automate data manipulation
-\end{itemize}
+\end{itemize}}
 \textbf{Residential Computing Service and Support (ResCom)} -- \textit{Student Technician} \hfill \textbf{University Park, PA}
-\begin{itemize}
+{\setlength{\parskip}{0pt}\begin{itemize}
 \item Troubleshoot student wireless/wired internet connections and wireless routers \hfill Aug. 2014 -- Feb. 2015
 \item Troubleshoot computer software and functionality issues
 \item Serviced on-call technical problems and maintenance
-\end{itemize}
+\end{itemize}}
 \end{document}
