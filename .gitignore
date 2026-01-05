@@ -6,3 +6,6 @@
 *.out
 *.pdf
 *.run.xml
+*.fdb_latexmk
+*.fls
+*.synctex.gz
